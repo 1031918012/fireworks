@@ -208,13 +208,13 @@ function doLogic(){
 			sparks.splice(i,1);
 		}
 	}
-	p=Math.atan2(playerX,playerZ);
-	d=Math.sqrt(playerX*playerX+playerZ*playerZ);
-	d+=Math.sin(frames/80)/1.25;
-	t=Math.sin(frames/200)/40;
-	playerX=Math.sin(p+t)*d;
-	playerZ=Math.cos(p+t)*d;
-	yaw=pi+p+t;
+// 	p=Math.atan2(playerX,playerZ);
+// 	d=Math.sqrt(playerX*playerX+playerZ*playerZ);
+// 	d+=Math.sin(frames/80)/1.25;
+// 	t=Math.sin(frames/200)/40;
+// 	playerX=Math.sin(p+t)*d;
+// 	playerZ=Math.cos(p+t)*d;
+// 	yaw=pi+p+t;
 }
 
 function rgb(col){
@@ -229,7 +229,7 @@ function draw(){
 
 	ctx.clearRect(0,0,cx*2,cy*2);
 
-	ctx.fillStyle="#ff8";
+// 	ctx.fillStyle="#ff8";
 	for(i=-100;i<100;i+=3){
 		for(j=-100;j<100;j+=4){
 			x=i;z=j;y=25;
